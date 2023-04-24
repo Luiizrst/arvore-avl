@@ -151,7 +151,7 @@ class AVL { //classe avl com no apontado pra raiz
             delete temp;
         }
         else {
-            no* temp = procuraMin(no->dir);
+            No* temp = procuraMin(no->dir);
             no->valor = temp->valor;
             no->dir = remove(no->dir, temp->valor);
         }
@@ -162,4 +162,6 @@ class AVL { //classe avl com no apontado pra raiz
     }
 
     return balancear(no);
+    }
+
 }
